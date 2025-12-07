@@ -5,7 +5,7 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2)
     description = models.TextField()
     category = models.CharField(max_length=100)
-    image = models.ImageField(upload_to='images/', null=True, blank=True)  # آپلود مستقیم فایل
+    image = models.ImageField(upload_to='images/', null=True, blank=True)
     rating_rate = models.FloatField(default=0.0)
     rating_count = models.IntegerField(default=0)
 
